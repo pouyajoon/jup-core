@@ -1,11 +1,37 @@
 {
     "compilerOptions": {
+        "target": "es2017",
         "module": "commonjs",
-        "target": "es5",
-        "declaration": true,
-        "outDir": "./dist"
+        "outDir": "dist",
+        "sourceMap": true,
+        "declaration": false,
+        "esModuleInterop": true,
+        "moduleResolution": "node",
+        "typeRoots": [
+            "types",
+            "node_modules/@types"
+        ],
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "alwaysStrict": true,
+        "strictNullChecks": true,
+        "noUnusedLocals": true,
+        "allowJs": false,
+        "skipLibCheck": true,
+        "lib": [
+            "es6",
+            "dom",
+            "esnext"
+        ],
+        "types": [
+            "node",
+            "jest"
+        ]
     },
     "include": [
-        "src/**/*"
+        "src/**/*.ts"
+    ],
+    "exclude": [
+        "node_modules"
     ]
 }
