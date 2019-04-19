@@ -6,7 +6,7 @@
   "repository": "git@github.com:pouyajoon/jupiter-core.git",
   "author": "pouya mohtacham",
   "license": "MIT",
-  "private": false,
+  "public": true,
   "scripts": {
     "build": "tsc",
     "start": "node dist/index.js",
