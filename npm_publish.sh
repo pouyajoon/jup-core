@@ -5,9 +5,12 @@
 # git push origin master
 
 npm run build
+npm version patch
 
 cp -r dist/* publish/
 cp -r package.json publish/
 cp -r README.md publish/
-npm version minor
+
+cd publish
 npm publish
+cd ..
