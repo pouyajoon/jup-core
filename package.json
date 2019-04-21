@@ -11,14 +11,20 @@
     "build": "tsc",
     "start": "node dist/index.js",
     "watch": "tsc --watch",
-    "dev": "nodemon --require ts-node/register ./src/index.ts"
+    "dev": "nodemon --require ts-node/register ./src/index.ts",
+    "publish": "npm publish"
   },
   "publishConfig": {
     "access": "public"
   },
+  "files": [
+    "dist/**/*"
+  ],
   "dependencies": {
     "pluralize": "7.0.0",
     "ts-node": "8.1.0",
+    "tslint": "5.16.0",
+    "tslint-config-prettier": "1.18.0",
     "typescript": "3.4.4"
   },
   "devDependencies": {
