@@ -8,4 +8,8 @@ exports.capitalize = stringUtils_1.capitalize;
 exports.plural = stringUtils_1.plural;
 exports.singularize = stringUtils_1.singularize;
 exports.toUnderscore = stringUtils_1.toUnderscore;
+function b() {
+    return 'b';
+}
+exports.b = b;
 //# sourceMappingURL=index.js.map
