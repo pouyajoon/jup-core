@@ -11,8 +11,7 @@
     "build": "tsc",
     "start": "node dist/index.js",
     "watch": "tsc --watch",
-    "dev": "nodemon --require ts-node/register ./src/index.ts",
-    "publish": "npm publish"
+    "dev": "nodemon --require ts-node/register ./src/index.ts"
   },
   "publishConfig": {
     "access": "public"

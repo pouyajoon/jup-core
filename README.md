@@ -1,1 +1,2 @@
-# jupiter-core
+# @jup/core
+core shared methods
