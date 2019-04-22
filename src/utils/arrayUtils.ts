@@ -12,8 +12,8 @@ export function chunk<T>(list: T[], size: number): T[][] {
         []);
 }
 
-interface IObjectWithName { name: string }
-interface IObjectWithNameAndValue { name: string, value: string }
+interface IObjectWithName { name: string; }
+interface IObjectWithNameAndValue { name: string; value: string; }
 export function mergeOnAnObjectByName(acc: Record<string, IObjectWithName>, v: IObjectWithName) {
     acc[v.name] = v;
     return acc;

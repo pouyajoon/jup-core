@@ -31,4 +31,4 @@ export const plural = (s: string) => {
 
 export const singularize = (s: string) => {
     return pluralize.singular(s);
-}
+};
