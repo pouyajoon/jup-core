@@ -23,3 +23,8 @@ export function mergeValueByName(acc: Record<string, string>, v: IObjectWithName
     acc[v.name] = v.value;
     return acc;
 }
+export function mergeOnAnObjectByNameRemoveName(acc: Record<string, IObjectWithName>, v: IObjectWithName) {
+    acc[v.name] = v;
+    delete v.name;
+    return acc;
+}
