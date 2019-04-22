@@ -25,7 +25,7 @@ export const toUnderscore = (input: string) => {
     return input.replace(/([A-Z])/g, $1 => '_' + $1.toLowerCase());
 };
 
-export const plural = (s: string) => {
+export const toPlural = (s: string) => {
     return pluralize.plural(s);
 };
 
