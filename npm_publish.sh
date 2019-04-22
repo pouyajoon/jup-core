@@ -5,6 +5,8 @@ npm run build
 
 cp -r dist/* publish/
 cp -r package.json publish/
+cp -r tslint.json publish/
+cp -r tsconfig.json publish/
 cp -r README.md publish/
 
 git add .
