@@ -3,4 +3,5 @@ export {
     mergeArrayOfArray, chunk, mergeOnAnObjectByName,
     mergeValueByName, mergeOnAnObjectByNameRemoveName
 } from './utils/arrayUtils';
+export { rwait } from './utils/timeUtils';
 export { PropertyTypeJupType } from './metaModel/propertyTypes';
