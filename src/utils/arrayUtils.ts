@@ -14,7 +14,7 @@ export function chunk<T>(list: T[], size: number): T[][] {
 
 interface IObjectWithName { name: string; }
 interface IObjectWithNameAndValue { name: string; value: string; }
-export function mergeOnAnObjectByName(acc: Record<string, IObjectWithName>, v: IObjectWithName) {
+export function mergeOnAnObjectByName<T extends IObjectWithName>(acc: Record<string, T>, v: T) {
     acc[v.name] = v;
     return acc;
 }
@@ -27,4 +27,10 @@ export function mergeOnAnObjectByNameRemoveName(acc: Record<string, IObjectWithN
     acc[v.name] = v;
     delete v.name;
     return acc;
+}
+
+export function mergeOnName<T extends IObjectWithName>(list: T[]): Record<string, T> {
+    const init: Record<string, T> = {};
+    const modelsStore: Record<string, T> = list.reduce(mergeOnAnObjectByName, init);
+    return modelsStore;
 }

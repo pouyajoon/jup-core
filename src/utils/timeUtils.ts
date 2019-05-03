@@ -8,3 +8,9 @@ export const rwait = (ms?: number) => {
             ms);
     });
 };
+
+export async function wait(s: number) {
+    return new Promise(r => {
+        setTimeout(r, s * 1000);
+    });
+}
