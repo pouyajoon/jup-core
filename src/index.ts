@@ -5,4 +5,5 @@ export {
     mergeOnName
 } from './utils/arrayUtils';
 export { rwait, wait } from './utils/timeUtils';
+export { mapper, IMapperMap, getMapperMatch } from './utils/mapper';
 export { PropertyTypeJupType } from './metaModel/propertyTypes';
