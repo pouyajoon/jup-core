@@ -2416,6 +2416,10 @@ rc@^1.2.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
+react-hooks@1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/react-hooks/-/react-hooks-1.0.1.tgz#e62197c38cd8d0703060f791234f7f4698aa7c44"
+
 react-is@^16.8.4:
   version "16.8.6"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.8.6.tgz#5bbc1e2d29141c9fbdfed456343fe2bc430a6a16"
@@ -2931,6 +2935,10 @@ tslib@^1.8.0, tslib@^1.8.1:
 tslint-config-prettier@1.18.0:
   version "1.18.0"
   resolved "https://registry.yarnpkg.com/tslint-config-prettier/-/tslint-config-prettier-1.18.0.tgz#75f140bde947d35d8f0d238e0ebf809d64592c37"
+
+tslint-react-hooks@2.2.1:
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/tslint-react-hooks/-/tslint-react-hooks-2.2.1.tgz#c52c7df65ee1517b2d6c92bc716e9ef72ccdf208"
 
 tslint-react@4.0.0:
   version "4.0.0"
