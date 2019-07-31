@@ -18,16 +18,16 @@
     "access": "public"
   },
   "dependencies": {
-    "pluralize": "7.0.0"
+    "pluralize": "8.0.0"
   },
   "devDependencies": {
-    "@types/node": "11.13.6",
+    "@types/node": "12.6.8",
     "eslint-plugin-react-hooks": "1.6.1",
-    "jest": "24.7.1",
-    "ts-node": "8.1.0",
-    "tslint": "5.16.0",
+    "jest": "24.8.0",
+    "ts-node": "8.3.0",
+    "tslint": "5.18.0",
     "tslint-config-prettier": "1.18.0",
     "tslint-react": "4.0.0",
-    "typescript": "3.4.4"
+    "typescript": "3.5.3"
   }
 }
