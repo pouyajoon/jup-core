@@ -18,8 +18,7 @@
     "access": "public"
   },
   "dependencies": {
-    "pluralize": "8.0.0",
-    "react-hooks": "1.0.1"
+    "pluralize": "8.0.0"
   },
   "devDependencies": {
     "@types/node": "12.6.8",

@@ -2,8 +2,7 @@
    "extends": [
       "tslint:recommended",
       "tslint-config-prettier",
-      "tslint-react",
-      "react-hooks"
+      "tslint-react"
    ],
    "linterOptions": {
       "exclude": [
@@ -12,8 +11,6 @@
       ]
    },
    "rules": {
-      "react-hooks/rules-of-hooks": "error",
-      "react-hooks/exhaustive-deps": "warn",
       "object-literal-sort-keys": false,
       "member-access": false,
       "max-classes-per-file": false,
