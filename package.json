@@ -22,7 +22,6 @@
   },
   "devDependencies": {
     "@types/node": "12.6.8",
-    "eslint-plugin-react-hooks": "1.6.1",
     "jest": "24.8.0",
     "ts-node": "8.3.0",
     "tslint": "5.18.0",
