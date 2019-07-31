@@ -2,7 +2,7 @@ export { camelize, capitalize, toPlural, singularize, toUnderscore } from './uti
 export {
     mergeArrayOfArray, chunk, mergeOnAnObjectByName,
     mergeValueByName, mergeOnAnObjectByNameRemoveName,
-    mergeOnName
+    mergeOnName, mergeOnAnObjectById
 } from './utils/arrayUtils';
 export { rwait, wait } from './utils/timeUtils';
 export { mapper, getMapperMatch } from './utils/mapper';
