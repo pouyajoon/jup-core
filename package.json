@@ -21,13 +21,13 @@
     "pluralize": "8.0.0"
   },
   "devDependencies": {
-    "@types/node": "12.6.8",
-    "jest": "24.8.0",
+    "@types/node": "12.7.4",
+    "jest": "24.9.0",
     "ts-node": "8.3.0",
-    "tslint": "5.18.0",
+    "tslint": "5.20.0",
     "tslint-config-prettier": "1.18.0",
     "tslint-react": "4.0.0",
     "tslint-react-hooks": "2.2.1",
-    "typescript": "3.5.3"
+    "typescript": "3.6.2"
   }
 }
