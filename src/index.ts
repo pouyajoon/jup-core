@@ -13,3 +13,6 @@ export { PropertyTypeJupType } from './metaModel/propertyTypes';
 
 export { createFilter } from './api/where/where';
 export { IJupWhereNode, JupWhereRecord, JupWhereOperator, IJupWhereRecordValue } from './api/where/where.models';
+export * from './packages/point/point';
+export * from './packages/point/models';
+export * from './packages/area/area';
