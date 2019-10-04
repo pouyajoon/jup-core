@@ -1,8 +1,8 @@
-export interface Point2d {
+export interface IPoint2d {
     x: number;
     y: number;
 }
 
-export interface Point3d extends Point2d {
+export interface IPoint3d extends IPoint2d {
     z: number;
 }

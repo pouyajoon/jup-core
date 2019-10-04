@@ -1,6 +1,6 @@
-import { Point3d } from './models';
+import { IPoint3d } from './models';
 
-export class Point implements Point3d {
+export class Point implements IPoint3d {
     public x: number;
     public y: number;
 
@@ -20,7 +20,7 @@ export class Point implements Point3d {
         this.z = z || 0;
     }
 
-    get point3d(): Point3d {
+    get point3d(): IPoint3d {
         return { x: this.x, y: this.y, z: this.z };
     }
 
