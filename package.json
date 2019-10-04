@@ -1,6 +1,6 @@
 {
   "name": "@jup/core",
-  "version": "0.3.38",
+  "version": "0.3.39",
   "description": "jup core for server & client.",
   "typings": "dist/index",
   "main": "dist/index.js",
