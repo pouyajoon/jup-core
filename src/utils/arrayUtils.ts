@@ -12,6 +12,11 @@ export function chunk<T>(list: T[], size: number): T[][] {
         []);
 }
 
+export function uniqueArray<T extends number | string>(a: T[]) {
+    const result = [...new Set(a)];
+    return result;
+}
+
 interface IObjectWithName { name: string; }
 interface IObjectWithId { id: number; }
 interface IObjectWithNameAndValue { name: string; value: string; }

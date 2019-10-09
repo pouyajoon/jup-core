@@ -1,9 +1,5 @@
 export { camelize, capitalize, toPlural, singularize, toUnderscore } from './utils/stringUtils';
-export {
-    mergeArrayOfArray, chunk, mergeOnAnObjectByName,
-    mergeValueByName, mergeOnAnObjectByNameRemoveName,
-    mergeOnName, mergeOnAnObjectById
-} from './utils/arrayUtils';
+export * from './utils/arrayUtils';
 export { rwait, wait } from './utils/timeUtils';
 export { mapper, getMapperMatch } from './utils/mapper';
 import { IMapperMap } from './utils/mapper';
