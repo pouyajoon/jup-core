@@ -12,3 +12,6 @@ export { IJupWhereNode, JupWhereRecord, JupWhereOperator, IJupWhereRecordValue }
 export * from './packages/point/point';
 export * from './packages/point/models';
 export * from './packages/area/area';
+export * from './packages/area/distance';
+export * from './packages/area/perimeter';
+export * from './packages/area/scale';

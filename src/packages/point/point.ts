@@ -54,6 +54,14 @@ export class Point implements IPoint3d {
         return { x: this.x, y: this.y };
     }
 
+    equals(p?: Point) {
+        if (p === undefined) {
+            return false;
+        }
+        const { x, y } = this;
+        return p.x === x && p.y === y;
+    }
+
 }
 
 export const Points = {
