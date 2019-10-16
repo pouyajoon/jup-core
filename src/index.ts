@@ -14,4 +14,5 @@ export * from './packages/point/models';
 export * from './packages/area/area';
 export * from './packages/area/distance';
 export * from './packages/area/perimeter';
-export * from './packages/area/scale';
+import { ColorsMap } from './packages/colors/colors.models';
+export type ColorsMap = ColorsMap;
