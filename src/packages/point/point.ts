@@ -1,4 +1,4 @@
-import { IPoint3d } from './models';
+import { IPoint3d, IPoint2d } from './models';
 
 export class Point implements IPoint3d {
     public x: number;
@@ -50,7 +50,7 @@ export class Point implements IPoint3d {
         return Points.copy(this);
     }
 
-    get coordinates() {
+    get point2d(): IPoint2d {
         return { x: this.x, y: this.y };
     }
 
