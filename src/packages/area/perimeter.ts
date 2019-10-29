@@ -1,11 +1,9 @@
 import { IPoint2d } from '../point/models';
 import { lineDistance } from './distance';
-import { ILayoutScale } from './scale';
 
-export function getPerimeter(points: IPoint2d[], scale: ILayoutScale) {
+export function getPerimeter(points: IPoint2d[], ratio: number) {
     let d = 0;
     let sumDistance = 0;
-    const { length, dimension } = scale;
 
     let p2: IPoint2d;
     let p1: IPoint2d;
@@ -16,7 +14,7 @@ export function getPerimeter(points: IPoint2d[], scale: ILayoutScale) {
         } else {
             p2 = points[i + 1];
         }
-        d = lineDistance(p1, p2) * length / dimension;
+        d = lineDistance(p1, p2) * ratio;
         sumDistance += d;
     }
     return parseFloat(sumDistance.toFixed(1));
