@@ -1,4 +1,4 @@
-export type JupWhereOperator = 'like' | 'eq' | 'in';
+export type JupWhereOperator = "like" | "eq" | "in";
 export interface IJupWhereRecordValue {
     operator: JupWhereOperator;
     value: string;

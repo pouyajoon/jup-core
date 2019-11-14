@@ -1,4 +1,4 @@
-import * as pluralize from 'pluralize';
+import * as pluralize from "pluralize";
 
 export const camelize = (str: string) => {
     if (!str) {
@@ -6,7 +6,7 @@ export const camelize = (str: string) => {
     }
     let a = str.replace(/(?:^\w|[A-Z]|\b\w|\s+)/g, (match: string, index: number) => {
         if (+match === 0) {
-            return ''; // or if (/\s+/.test(match)) for white spaces
+            return ""; // or if (/\s+/.test(match)) for white spaces
         }
         return index === 0 ? match.toLowerCase() : match.toUpperCase();
     });
@@ -22,7 +22,7 @@ export const capitalize = (s: string) => {
 };
 
 export const toUnderscore = (input: string) => {
-    return input.replace(/([A-Z])/g, $1 => '_' + $1.toLowerCase());
+    return input.replace(/([A-Z])/g, $1 => "_" + $1.toLowerCase());
 };
 
 export const toPlural = (s: string) => {

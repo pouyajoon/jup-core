@@ -1,4 +1,4 @@
-import { IPoint3d, IPoint2d } from './models';
+import { IPoint2d, IPoint3d } from "./models";
 
 export class Point implements IPoint3d {
     public x: number;
@@ -9,12 +9,12 @@ export class Point implements IPoint3d {
     constructor(x: number, y: number, z?: number) {
         this.set(x, y, z);
     }
-    toString() {
+    public toString() {
         const { x, y, z } = this;
         return `(${x},${y},${z})`;
     }
 
-    set(x: number, y: number, z?: number) {
+    public set(x: number, y: number, z?: number) {
         this.x = x;
         this.y = y;
         this.z = z || 0;
@@ -24,29 +24,29 @@ export class Point implements IPoint3d {
         return { x: this.x, y: this.y, z: this.z };
     }
 
-    add(p: Point): Point {
+    public add(p: Point): Point {
         this.x += p.x;
         this.y += p.y;
         return this;
     }
-    substract(p: Point): Point {
+    public substract(p: Point): Point {
         this.x -= p.x;
         this.y -= p.y;
         return this;
     }
 
-    divide(d: number) {
+    public divide(d: number) {
         this.x /= d;
         this.y /= d;
     }
 
-    multiply(d: number): Point {
+    public multiply(d: number): Point {
         this.x *= d;
         this.y *= d;
         return this;
     }
 
-    clone() {
+    public clone() {
         return Points.copy(this);
     }
 
@@ -54,7 +54,7 @@ export class Point implements IPoint3d {
         return { x: this.x, y: this.y };
     }
 
-    equals(p?: Point) {
+    public equals(p?: Point) {
         if (p === undefined) {
             return false;
         }

@@ -1,4 +1,4 @@
-import { IPoint2d } from '../point/models';
+import { IPoint2d } from "../point/models";
 
 export function lineDistance(point1: IPoint2d, point2: IPoint2d) {
     let xs = point2.x - point1.x;

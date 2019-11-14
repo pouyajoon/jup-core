@@ -1,4 +1,4 @@
-import { IPoint2d } from '../point/models';
+import { IPoint2d } from "../point/models";
 
 export function getArea2d(points: IPoint2d[], ratio: number) {
     const l = points.length;

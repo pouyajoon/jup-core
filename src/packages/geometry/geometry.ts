@@ -1,4 +1,4 @@
-import { IPoint2d } from '../point/models';
+import { IPoint2d } from "../point/models";
 
 export function rotate(cx: number, cy: number, x: number, y: number, angle: number): IPoint2d {
     const radians = (Math.PI / 180) * angle;
