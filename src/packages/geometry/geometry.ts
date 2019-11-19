@@ -14,3 +14,7 @@ export function rotatePoint(center: IPoint2d, point: IPoint2d, angle: number): I
     const { x, y } = point;
     return rotate(cx, cy, x, y, angle);
 }
+
+export function displayAngleInDegree(deg: number) {
+    return `${Math.floor(deg)} °`;
+}

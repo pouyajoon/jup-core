@@ -7,6 +7,7 @@ export * from "./api/where/where";
 export * from "./api/where/where.models";
 export * from "./packages/point/point";
 export * from "./packages/point/models";
+export * from "./packages/point/utils";
 export * from "./packages/area/area";
 export * from "./packages/area/distance";
 export * from "./packages/area/perimeter";
