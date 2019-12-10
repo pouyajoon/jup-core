@@ -14,3 +14,4 @@ export * from "./packages/area/perimeter";
 export * from "./packages/geometry/geometry";
 export * from "./packages/colors/colors.models";
 export * from "./packages/icons/icons.models";
+export * from "./metaModel/shared/objectType";
