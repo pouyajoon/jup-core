@@ -1,8 +1,9 @@
 export type MetaModelObjectTypeDefinitionType = "many-to-many" | "table";
+export type MetaModelObjectTypeTenantScopeType = "public" | "private";
 export interface IObjectTypeDefinition {
     singular: string;
     type: MetaModelObjectTypeDefinitionType;
-
+    scope: MetaModelObjectTypeTenantScopeType;
 }
 
 export interface IObjectType extends IObjectTypeDefinition {
