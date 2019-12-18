@@ -44,3 +44,7 @@ export function mergeOnName<T extends IObjectWithName>(list: T[]): Record<string
     const modelsStore: Record<string, T> = list.reduce(mergeOnAnObjectByName, init);
     return modelsStore;
 }
+
+export function sortOnName(a: IObjectWithName, b: IObjectWithName) {
+    return a.name.localeCompare(b.name);
+}
